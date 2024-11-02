@@ -7,7 +7,7 @@ This Node.js project is one I have written to serve as a "bringing up to speed" 
 ## Features
 
 - **CRUD Operations**: Create, Read, Update, and Delete operations on text items.
-- **Database Integration**: Uses PostgreSQL for persistent data storage. Though, I have added some simple implementations for SQLite 3 and also a basic in-memory storage which both can be swapped out, if needed, but personally for me: PostgreSQL for the win.
+- **Database Integration**: Uses PostgreSQL for persistent data storage. Though, I have added some simple implementations for SQLite 3 and also a basic in-memory storage which both can be swapped in/out, if needed, but personally for me: PostgreSQL for the win.
 - **Frontend Interface**: Simple HTML, CSS and JavaScript for user interaction.
 - **Dynamic Updates**: Automatically updates the UI after CRUD operations.
 
