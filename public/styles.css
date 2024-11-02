@@ -1,0 +1,102 @@
+:root {
+    --color1: #10232a;
+    --color2: #3d4d55;
+    --color3: #a79e9c;
+    --color4: #d3c3b9;
+    --color5: #b58863;
+    --color6: #161616;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'con1 con2';
+    font-family: monospace;
+    background-color: #000000;
+    height: 100vh;
+}
+
+.container {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+#entry-container {
+    grid-area: con1;
+    background-color: var(--color5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+h1 {
+    color: var(--color1);
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color1);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#item-list-container {
+    grid-area: con2;
+    background-color: var(--color6);
+    color: var(--color4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#item-list-container > h2 {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas:
+        'con1'
+        'con2';
+        height: 100vh;
+    }
+ }
+
+ .list-item {
+    background-color: var(--color3);
+    color: var(--color6);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: 18px;
+ }
+
+ .list-item > div > button {
+    padding: 10px;
+ }
+
+ ul {
+    width: 100%;
+ }
