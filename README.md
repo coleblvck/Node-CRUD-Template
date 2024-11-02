@@ -54,7 +54,7 @@ node server.mjs
 npm run dev-mjs
 ```
 
-6. Navigate to `http://localhost:3000` in your browser to access the app.
+6. Navigate to `http://localhost:3001` in your browser to access the app.
 
 ## Usage
 
